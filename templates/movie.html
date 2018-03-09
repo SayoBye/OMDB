@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>{{Title}}</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/movie.css">
+</head>
+
+<body>
+  <div class="container">
+  <div class="cellphone-container">    
+      <div class="movie">       
+        <img  class="movie-img" src="{{Poster}}"></img>
+        <div class="text-movie-cont">
+          <div class="mr-grid">
+            <div class="col1">
+              <h1>{{Title}}</h1>
+              <ul class="movie-gen">
+                <li>Дата выхода:{{Released}}</li>
+                <li>Длительность: {{Runtime}}</li>
+                <li>Жанр: {{Genre}}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-grid summary-row">
+            <div class="col2">
+              <h5>Описание</h5>
+            </div>
+          </div>
+          <div class="mr-grid">
+            <div class="col1">
+              <p class="movie-description">{{Plot}}</p>
+            </div>
+          </div>
+          <div class="mr-grid actors-row">
+            <div class="col1">
+              <p class="movie-actors">{{Actors}}</p>
+            </div>
+          </div>
+          <div class="mr-grid action-row">
+            <div class="col2"><div class="watch-btn"><a href="http://www.imdb.com/title/{{imdbID}}" target="_blank">Подробнее</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

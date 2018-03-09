@@ -1,0 +1,25 @@
+{
+  "name": "ODMBsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "npm run watch && npm run serve",
+    "babel": "babel src --out-dir dist --source-maps inline",
+    "watch": "babel src --watch --out-dir dist --source-maps inline",
+    "serve": "nodemon dist/server.js localhost 3000"
+  },
+  "author": "sayobye",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "sloc": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.15.1"
+  }
+}
